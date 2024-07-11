@@ -8,6 +8,7 @@ import img_2m from "../../assets/img/2m.png";
 import { twMerge } from "tailwind-merge";
 import { useRef } from "react";
 import { DEFAULT_PARAMS_INVIEW, V_FROM_BOTTOM_TO_ORIGIN, V_FROM_LEFT_TO_ORIGIN, V_FROM_RIGHT_TO_ORIGIN } from "../../constants/constants";
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
 	const refImgD1 = useRef(null);
@@ -68,21 +69,25 @@ const TextFormat = ({ children, className }) => {
 };
 
 const AboutTextMain = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
-			<TextFormat className={"mb-8"}>Somos un proyecto de sol, consciente con el medio ambiente y la comunidad que nos rodea</TextFormat>
-			<TextFormat>Un secreto en el trópico</TextFormat>
+			<TextFormat className={"mb-8"}>{t("home.about.p1")}</TextFormat>
+			<TextFormat>{t("home.about.p2")}</TextFormat>
 		</>
 	);
 };
 
 const AboutTextSecundary = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
 			<img src={icono} width="35px" alt="Icono en rayas" className="mx-auto mb-11" />
-			<TextFormat className=" mb-8">Un espacio revitalizante, sustentable, regenerativo y de bienestar</TextFormat>
-			<TextFormat className=" mb-8">Un lugar de desconexión y reconexión</TextFormat>
-			<TextFormat>Un culto al sol, a la vida, al arte y a la aventura.</TextFormat>
+			<TextFormat className=" mb-8">{t("home.about.p3")}</TextFormat>
+			<TextFormat className=" mb-8">{t("home.about.p4")}</TextFormat>
+			<TextFormat>{t("home.about.p5")}</TextFormat>
 		</>
 	);
 };

@@ -5,6 +5,8 @@ import App from "./App.jsx";
 import "./assets/fonts/fonts.css";
 import "./css/main.css";
 
+import "./lang/i18n.js";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<App />

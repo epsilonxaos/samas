@@ -3,8 +3,10 @@ import { motion, useInView } from "framer-motion";
 
 import logo from "../assets/img/logo.svg";
 import { V_FROM_TOP_TO_ORIGIN } from "../constants/constants";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
+	const { t } = useTranslation();
 	const ref = useRef(null);
 
 	const isInView = useInView(ref, { once: true });
@@ -18,15 +20,29 @@ export const Header = () => {
 
 				<ul className="flex gap-8 ml-auto mr-0 max-w-max">
 					<li>
-						<button>ES</button>
-						<span className="inline-block px-2">/</span>
-						<button>EN</button>
+						<Language />
 					</li>
 					<li className="hidden md:block">
-						<p>PRÓXIMAMENTE</p>
+						<p>{t("comingSoon")}</p>
 					</li>
 				</ul>
 			</div>
 		</motion.header>
+	);
+};
+
+const Language = () => {
+	const { i18n } = useTranslation();
+
+	return (
+		<>
+			<button type="button" onClick={() => i18n.changeLanguage("es")} className={i18n.language == "es" ? "font-bold" : "cursor-pointer opacity-30 hover:opacity-100"}>
+				ES
+			</button>
+			<span className="inline-block px-2">/</span>
+			<button type="button" onClick={() => i18n.changeLanguage("en")} className={i18n.language == "en" ? "font-bold" : "cursor-pointer opacity-30 hover:opacity-100"}>
+				EN
+			</button>
+		</>
 	);
 };
