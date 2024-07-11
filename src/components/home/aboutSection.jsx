@@ -1,10 +1,31 @@
+import { motion, useInView } from "framer-motion";
+
 import icono from "../../assets/img/icono.svg";
 import img_1 from "../../assets/img/1.png";
 import img_2 from "../../assets/img/2.png";
 import img_1m from "../../assets/img/1m.png";
 import img_2m from "../../assets/img/2m.png";
+import { twMerge } from "tailwind-merge";
+import { useRef } from "react";
+import { DEFAULT_PARAMS_INVIEW, V_FROM_BOTTOM_TO_ORIGIN, V_FROM_LEFT_TO_ORIGIN, V_FROM_RIGHT_TO_ORIGIN } from "../../constants/constants";
 
 const AboutSection = () => {
+	const refImgD1 = useRef(null);
+	const refImgD2 = useRef(null);
+	const refImgM1 = useRef(null);
+	const refImgM2 = useRef(null);
+
+	const refMainText = useRef(null);
+	const refSecundaryText = useRef(null);
+
+	const isInViewIMGD1 = useInView(refImgD1, DEFAULT_PARAMS_INVIEW);
+	const isInViewIMGD2 = useInView(refImgD2, DEFAULT_PARAMS_INVIEW);
+	const isInViewIMGM1 = useInView(refImgM1, DEFAULT_PARAMS_INVIEW);
+	const isInViewIMGM2 = useInView(refImgM2, DEFAULT_PARAMS_INVIEW);
+
+	const isInViewMainText = useInView(refMainText, DEFAULT_PARAMS_INVIEW);
+	const isInViewSecundaryText = useInView(refSecundaryText, DEFAULT_PARAMS_INVIEW);
+
 	return (
 		<section className="py-12 md:py-16 lg:py-32 w-full">
 			<div className="relative">
@@ -14,24 +35,26 @@ const AboutSection = () => {
 				<div className="max-w-app mx-auto">
 					<div className="grid grid-cols-1 md:grid-cols-2 relative z-10">
 						<div className="col-span-1">
-							<div className="py-[60px] md:py-16 min-h-[200px] max-w-[250px] md:max-w-[425px] mx-auto md:mr-12 xl:mr-24 pl-4">
+							<motion.div ref={refMainText} variants={V_FROM_LEFT_TO_ORIGIN} initial={"initial"} animate={isInViewMainText ? "show" : ""} className="py-[60px] md:py-16 min-h-[200px] max-w-[250px] md:max-w-[425px] mx-auto md:mr-12 xl:mr-24 pl-4">
 								<AboutTextMain />
-							</div>
+							</motion.div>
 
 							{/* // * Movil */}
-							<img src={img_1m} alt="Surf" className="w-[calc(100%-60px)] object-cover min-h-[400px] md:hidden" />
-							{/* // * Escritorio */}
-							<img src={img_2} alt="palmeras" className="w-full hidden md:block object-cover min-h-[600px] max-w-max ml-auto" />
+							<motion.img ref={refImgM1} variants={V_FROM_BOTTOM_TO_ORIGIN} initial={"initial"} animate={isInViewIMGM1 ? "show" : ""} src={img_1m} alt="Surf" className="w-[calc(100%-60px)] object-cover min-h-[400px] md:hidden" />
+							{/* // ! Escritorio */}
+							<motion.img ref={refImgD2} variants={V_FROM_BOTTOM_TO_ORIGIN} initial={"initial"} animate={isInViewIMGD2 ? "show" : ""} src={img_2} alt="palmeras" className="w-full hidden md:block object-cover min-h-[600px] max-w-max ml-auto" />
 						</div>
 
 						<div className="col-span-1">
-							{/* // ? Movil */}
-							<img src={img_2m} alt="palmeras" className="w-[calc(100%-100px)] object-cover min-h-[280px] max-h-[300px] ml-auto md:hidden relative -top-[90px]" />
-							{/* // ? Escritorio */}
-							<img src={img_1} alt="Surf" className="w-full object-cover min-h-[450px] hidden md:block" />
-							<div className="pb-11 md:py-16 max-w-[260px] md:max-w-[415px] max-md:mx-auto md:ml-12 xl:ml-24 pr-4">
+							{/* // * Movil */}
+							<motion.img ref={refImgM2} variants={V_FROM_RIGHT_TO_ORIGIN} initial={"initial"} animate={isInViewIMGM2 ? "show" : ""} src={img_2m} alt="palmeras" className="w-[calc(100%-100px)] object-cover min-h-[280px] max-h-[300px] ml-auto md:hidden relative -top-[90px]" />
+
+							{/* // ! Escritorio */}
+							<motion.img ref={refImgD1} variants={V_FROM_RIGHT_TO_ORIGIN} initial={"initial"} animate={isInViewIMGD1 ? "show" : ""} src={img_1} alt="Surf" className="w-full object-cover min-h-[450px] hidden md:block" />
+
+							<motion.div ref={refSecundaryText} variants={V_FROM_RIGHT_TO_ORIGIN} initial={"initial"} animate={isInViewSecundaryText ? "show" : ""} className="pb-11 md:py-16 max-w-[260px] md:max-w-[375px] max-md:mx-auto md:ml-12 xl:ml-24 pr-4">
 								<AboutTextSecundary />
-							</div>
+							</motion.div>
 						</div>
 					</div>
 				</div>
@@ -40,27 +63,27 @@ const AboutSection = () => {
 	);
 };
 
-const TextFormat = ({ children }) => {
-	return <p className="uppercase text-xs md:text-sm xl:text-base text-center tracking-[1.8px] md:tracking-[2.4px]">{children}</p>;
+const TextFormat = ({ children, className }) => {
+	return <p className={twMerge("uppercase text-xs md:text-sm text-center tracking-[1.8px] ", className)}>{children}</p>;
 };
 
 const AboutTextMain = () => {
 	return (
-		<TextFormat>
-			<span className="block mb-8">Somos un proyecto de sol, consciente con el medio ambiente y la comunidad que nos rodea</span>
-			<span className="block">Un secreto en el trópico</span>
-		</TextFormat>
+		<>
+			<TextFormat className={"mb-8"}>Somos un proyecto de sol, consciente con el medio ambiente y la comunidad que nos rodea</TextFormat>
+			<TextFormat>Un secreto en el trópico</TextFormat>
+		</>
 	);
 };
 
 const AboutTextSecundary = () => {
 	return (
-		<TextFormat>
+		<>
 			<img src={icono} width="35px" alt="Icono en rayas" className="mx-auto mb-11" />
-			<span className="block mb-8">Un espacio revitalizante, sustentable, regenerativo y de bienestar</span>
-			<span className="block mb-8">Un lugar de desconexión y reconexión</span>
-			<span className="block">Un culto al sol, a la vida, al arte y a la aventura.</span>
-		</TextFormat>
+			<TextFormat className=" mb-8">Un espacio revitalizante, sustentable, regenerativo y de bienestar</TextFormat>
+			<TextFormat className=" mb-8">Un lugar de desconexión y reconexión</TextFormat>
+			<TextFormat>Un culto al sol, a la vida, al arte y a la aventura.</TextFormat>
+		</>
 	);
 };
 
