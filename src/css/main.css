@@ -31,19 +31,27 @@ html {
 }
 
 .serpiente-deco-movil {
-	@apply h-full w-full absolute md:hidden;
+	@apply h-[1100px] w-full absolute md:hidden;
 	top: 0px;
 	background-image: url("../assets/img/serpiente-movil.svg");
 	background-position: top;
-	background-size: auto;
+	background-size: auto 1100px;
 	background-repeat: no-repeat;
 	transform: rotate(-180deg);
 }
 
+.circulo-deco-left,
 .circulo-deco {
-	@apply size-[400px] md:size-[800px] absolute left-[-220px] bottom-[-230px] md:left-auto md:right-[-400px] md:bottom-[-300px];
 	background-image: url("../assets/img/circulo.svg");
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
+}
+
+.circulo-deco {
+	@apply size-[400px] md:size-[600px] xl:size-[800px] absolute left-[-220px] bottom-[-230px] md:left-auto md:right-[-320px] xl:right-[-400px] md:bottom-[-100px] xl:bottom-[-300px];
+}
+
+.circulo-deco-left {
+	@apply md:size-[600px] xl:size-[800px] absolute left-[-320px] xl:left-[-420px] bottom-[-100px] xl:bottom-[-230px] hidden md:block;
 }

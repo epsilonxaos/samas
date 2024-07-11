@@ -9,7 +9,7 @@ function App() {
 
 			<Home />
 			<div className="relative w-full">
-				<div className="circulo-deco"></div>
+				<div className="circulo-deco" />
 			</div>
 			<Footer />
 		</div>

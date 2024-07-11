@@ -30,7 +30,11 @@ export const Footer = () => {
 				</motion.p>
 			</div>
 
-			<SubFooter />
+			<div className="relative">
+				<div className="circulo-deco-left" />
+
+				<SubFooter />
+			</div>
 		</footer>
 	);
 };
