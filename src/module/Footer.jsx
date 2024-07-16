@@ -4,6 +4,7 @@ import isotipo from "../assets/img/isotipo.gif";
 import { useRef } from "react";
 import { DEFAULT_PARAMS_INVIEW, V_FADE_IN, V_FADE_IN_FROM_BOTTOM_TO_ORIGIN } from "../constants/constants";
 import { useTranslation } from "react-i18next";
+import { Link } from "wouter";
 
 export const Footer = () => {
 	const { t } = useTranslation();
@@ -78,7 +79,7 @@ const SubFooter = () => {
 				</a>
 			</p>
 			<p className="col-span-1 text-center md:text-right">
-				<a href="#">{t("privacyPolicies")}</a>
+				<Link to={"politicas-de-privacidad"}>{t("privacyPolicies")}</Link>
 			</p>
 		</motion.div>
 	);
