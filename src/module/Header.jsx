@@ -21,7 +21,7 @@ export const Header = () => {
 					</Link>
 				</picture>
 
-				<ul className="flex gap-8 ml-auto mr-0 max-w-max">
+				<ul className="flex w-full justify-end md:justify-between items-center">
 					<li>
 						<Language />
 					</li>
