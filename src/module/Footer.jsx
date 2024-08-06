@@ -56,7 +56,7 @@ const Contact = () => {
 				</a>
 			</li>
 			<li>
-				<a href="http://" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.instagram.com/samassaladita?igsh=N2psMWY2OGFseDgy" target="_blank" rel="noopener noreferrer">
 					@Lasal.Samas
 				</a>
 			</li>
