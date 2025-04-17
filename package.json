@@ -43,7 +43,8 @@
 		"build": "vite build",
 		"dev": "vite",
 		"lint": "eslint .",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"release": "node release.js"
 	},
 	"type": "module",
 	"version": "0.0.0"
