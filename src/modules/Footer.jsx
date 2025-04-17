@@ -1,8 +1,8 @@
-import { Link } from 'wouter'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 	return (
-		<footer className='bg-verde py-3 text-center text-gris md:px-[55px]'>
+		<footer className='bg-verde text-gris py-3 text-center md:px-[55px]'>
 			<div className='mx-auto flex max-w-[1550px] flex-col md:flex-row md:items-center md:justify-between'>
 				<p>Project</p>
 				<p>

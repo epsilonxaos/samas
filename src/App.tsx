@@ -1,7 +1,7 @@
 import AppContext from '@contexts/AppContext'
 import Footer from '@modules/Footer'
 import Header from '@modules/Header'
-import Routes from '@routes/Routes'
+import AppRoutes from '@routes/AppRoutes'
 import { Toaster } from 'sonner'
 
 import type { TEventActionApp, TEventStateApp } from '#types/main'
@@ -19,7 +19,7 @@ function App() {
 			<Toaster />
 			<Header />
 
-			<Routes />
+			<AppRoutes />
 
 			<Footer />
 		</AppContext.Provider>
