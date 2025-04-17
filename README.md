@@ -1,3 +1,5 @@
+![Static Badge](https://img.shields.io/badge/Version-1.0.0-purple)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
