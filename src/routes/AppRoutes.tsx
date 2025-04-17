@@ -1,23 +1,25 @@
 import Index from '@pages/home/Index'
 
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 
 const AppRoutes = () => {
+	const location = useLocation()
+
 	return (
-		<Router>
-			<main>
-				<Routes>
-					<Route
-						path='/'
-						element={<Index />}
-					/>
-					<Route
-						path='*'
-						element={<div>404: No such page!</div>}
-					/>
-				</Routes>
-			</main>
-		</Router>
+		<main>
+			<Routes
+				location={location}
+				key={location.pathname}>
+				<Route
+					path='/'
+					element={<Index />}
+				/>
+				<Route
+					path='*'
+					element={<div>404: No such page!</div>}
+				/>
+			</Routes>
+		</main>
 	)
 }
 

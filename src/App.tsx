@@ -17,6 +17,7 @@ function App() {
 	return (
 		<AppContext.Provider value={{ state, dispatch }}>
 			<Toaster />
+			{/* <ScrollToTop /> */}
 			<Header />
 
 			<AppRoutes />

@@ -9,5 +9,6 @@
 
 body,
 html {
+	font-family: 'Samas';
 	@apply bg-white;
 }
