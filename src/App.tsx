@@ -22,7 +22,7 @@ function App() {
 
 			<AppRoutes />
 
-			<Footer />
+			{/* <Footer /> */}
 		</AppContext.Provider>
 	)
 }
