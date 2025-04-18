@@ -2,6 +2,7 @@ import IMGBanner from '@assets/img/dummy.jpg'
 import SVGIsotipo from '@assets/img/isotipo_white.svg'
 import Banner from '@components/Banner'
 import About from '@pages/home/About'
+import LaSal from '@pages/home/LaSal'
 
 const Index = () => {
 	return (
@@ -16,8 +17,8 @@ const Index = () => {
 					alt='Isotipo'
 				/>
 			</Banner>
-
 			<About />
+			<LaSal />
 		</>
 	)
 }
