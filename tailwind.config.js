@@ -4,11 +4,6 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {
-			colors: {
-				gris: '#D9D9D9',
-				grisOscuro: '#535353',
-				aqua: '#588085',
-			},
 			fontFamily: {
 				itc: ['ITC Berkeley Oldstyle Std', 'sans-serif'],
 			},

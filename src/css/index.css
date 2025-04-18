@@ -7,8 +7,15 @@
 	}
 }
 
+@theme {
+	--color-gris: #d9d9d9;
+	--color-grisOscuro: #535353;
+	--color-verdeAqua: #588085;
+	--color-oscuro: #1e1e1e;
+}
+
 body,
 html {
 	font-family: 'Samas';
-	@apply bg-white;
+	@apply text-oscuro bg-white text-base;
 }
