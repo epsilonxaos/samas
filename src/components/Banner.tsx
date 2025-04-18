@@ -7,14 +7,16 @@ interface BannerProps {
 	cover: string
 	children?: ReactNode
 	includeRestHeader?: boolean
+	className?: string
 }
 
-const Banner = ({ children, includeRestHeader, cover }: BannerProps) => {
+const Banner = ({ children, includeRestHeader, cover, className }: BannerProps) => {
 	return (
 		<Container
 			className={cn(
 				'relative h-svh w-full max-w-none bg-white !p-0',
-				includeRestHeader && 'h-[calc(100vh-70px)] md:h-[calc(100vh-74px)]'
+				includeRestHeader && 'h-[calc(100vh-70px)] md:h-[calc(100vh-74px)]',
+				className
 			)}>
 			<img
 				src={cover}

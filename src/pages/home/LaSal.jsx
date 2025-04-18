@@ -8,7 +8,7 @@ import { cn } from '@utils/cn'
 
 const LaSal = () => {
 	return (
-		<Container className='grid grid-cols-1 gap-0 !p-0 md:grid-cols-2'>
+		<Container className='grid grid-cols-1 gap-0 p-0 md:grid-cols-2 md:!px-0 md:pt-0'>
 			<div className='order-2 col-span-1 md:order-1'>
 				<InfoComponent className='md:hidden' />
 				<img
