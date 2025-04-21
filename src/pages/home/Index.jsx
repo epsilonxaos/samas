@@ -3,6 +3,7 @@ import SVGIsotipo from '@assets/img/isotipo_white.svg'
 import VideoSeccion from '@assets/videos/dummy.mp4'
 import Banner from '@components/Banner'
 import LaSaladitaComponent from '@components/LaSaladitaComponent'
+import Mapa from '@components/Mapa'
 import { VideoModal } from '@components/VideoModal'
 import About from '@pages/home/About'
 import Experiencias from '@pages/home/Experiencias'
@@ -33,6 +34,7 @@ const Index = () => {
 				cover={IMGBanner}
 				videoSrc={VideoSeccion}
 			/>
+			<Mapa />
 		</>
 	)
 }
