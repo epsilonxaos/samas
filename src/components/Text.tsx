@@ -16,9 +16,11 @@ const Title = ({ children, className, parseHtml }: TitleProps) => {
 	if (parseHtml && !children) return null
 
 	if (parseHtml)
-		return <div className={cn('mb-8 text-lg uppercase md:text-xl', className)}>{parse(children as string)}</div>
+		return (
+			<div className={cn('mb-8 text-lg uppercase md:text-xl xl:text-3xl', className)}>{parse(children as string)}</div>
+		)
 
-	return <h3 className={cn('mb-8 text-lg uppercase md:text-xl', className)}>{children}</h3>
+	return <h3 className={cn('mb-8 text-lg uppercase md:text-xl xl:text-3xl', className)}>{children}</h3>
 }
 
 Text.Title = Title

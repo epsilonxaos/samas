@@ -19,3 +19,8 @@ html {
 	font-family: 'Samas';
 	@apply text-oscuro bg-white text-base;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+	@apply !top-0;
+}
