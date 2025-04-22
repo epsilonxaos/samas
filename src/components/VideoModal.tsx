@@ -5,9 +5,10 @@ import { MdOutlineClose } from 'react-icons/md'
 type VideoModalProps = {
 	videoSrc: string
 	cover: string
+	className?: string
 }
 
-export const VideoModal = ({ videoSrc, cover }: VideoModalProps) => {
+export const VideoModal = ({ videoSrc, cover, className }: VideoModalProps) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const videoRef = useRef<HTMLVideoElement | null>(null)
 

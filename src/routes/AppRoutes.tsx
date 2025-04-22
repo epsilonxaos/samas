@@ -1,3 +1,4 @@
+import Experiences from '@pages/experiences/Experiences'
 import Index from '@pages/home/Index'
 import Rooms from '@pages/rooms/Rooms'
 
@@ -18,6 +19,10 @@ const AppRoutes = () => {
 				<Route
 					path='/rooms'
 					element={<Rooms />}
+				/>
+				<Route
+					path='/experiences'
+					element={<Experiences />}
 				/>
 				<Route
 					path='*'

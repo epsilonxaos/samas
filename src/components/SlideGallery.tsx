@@ -82,8 +82,10 @@ const SlideGallery = ({
 								loading='lazy'
 							/>
 
-							<Text.Title>{slide.title}</Text.Title>
-							<Text>{slide.description}</Text>
+							<div className='pt-8'>
+								<Text.Title className={'xl:text-xl'}>{slide.title}</Text.Title>
+								<Text>{slide.description}</Text>
+							</div>
 						</div>
 					</SwiperSlide>
 				))}
