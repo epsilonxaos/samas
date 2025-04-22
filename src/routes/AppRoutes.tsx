@@ -1,4 +1,5 @@
 import Index from '@pages/home/Index'
+import Rooms from '@pages/rooms/Rooms'
 
 import { Route, Routes, useLocation } from 'react-router-dom'
 
@@ -13,6 +14,10 @@ const AppRoutes = () => {
 				<Route
 					path='/'
 					element={<Index />}
+				/>
+				<Route
+					path='/rooms'
+					element={<Rooms />}
 				/>
 				<Route
 					path='*'

@@ -17,12 +17,19 @@ type TSlideGallery = {
 }
 type TSlideGalleryProps = {
 	gallery: TSlideGallery[]
+	viewRoomGalleryActive?: boolean
 	classNameSlide?: string
 	classNameImg?: string
 	className?: string
 }
 
-const SlideGallery = ({ gallery, classNameSlide, classNameImg, className }: TSlideGalleryProps) => {
+const SlideGallery = ({
+	gallery,
+	classNameSlide,
+	classNameImg,
+	className,
+	viewRoomGalleryActive,
+}: TSlideGalleryProps) => {
 	const swiperRef = useRef()
 
 	return (
@@ -47,7 +54,7 @@ const SlideGallery = ({ gallery, classNameSlide, classNameImg, className }: TSli
 					enabled: false,
 				}}
 				spaceBetween={20}
-				slidesPerView={3}
+				slidesPerView={viewRoomGalleryActive ? 2.2 : 3}
 				onBeforeInit={swiper => {
 					swiperRef.current = swiper
 				}}
@@ -57,10 +64,10 @@ const SlideGallery = ({ gallery, classNameSlide, classNameImg, className }: TSli
 						slidesPerView: 1,
 					},
 					640: {
-						slidesPerView: 2,
+						slidesPerView: viewRoomGalleryActive ? 2.2 : 2,
 					},
 					1024: {
-						slidesPerView: 3,
+						slidesPerView: viewRoomGalleryActive ? 2.2 : 3,
 					},
 				}}>
 				{gallery.map((slide, index) => (
