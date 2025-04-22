@@ -1,6 +1,7 @@
 import Experiences from '@pages/experiences/Experiences'
 import Index from '@pages/home/Index'
 import Rooms from '@pages/rooms/Rooms'
+import LaSaladita from '@pages/saladita/LaSaladita'
 
 import { Route, Routes, useLocation } from 'react-router-dom'
 
@@ -23,6 +24,10 @@ const AppRoutes = () => {
 				<Route
 					path='/experiences'
 					element={<Experiences />}
+				/>
+				<Route
+					path='/la-saladita'
+					element={<LaSaladita />}
 				/>
 				<Route
 					path='*'
