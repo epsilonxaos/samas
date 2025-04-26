@@ -1,5 +1,7 @@
 import Experiences from '@pages/experiences/Experiences'
+import Gastronomy from '@pages/gastronomy/Gastronomy'
 import Index from '@pages/home/Index'
+import Products from '@pages/products/Products'
 import Rooms from '@pages/rooms/Rooms'
 import LaSaladita from '@pages/saladita/LaSaladita'
 
@@ -28,6 +30,14 @@ const AppRoutes = () => {
 				<Route
 					path='/la-saladita'
 					element={<LaSaladita />}
+				/>
+				<Route
+					path='/gastronomy'
+					element={<Gastronomy />}
+				/>
+				<Route
+					path='/products'
+					element={<Products />}
 				/>
 				<Route
 					path='*'
