@@ -1,5 +1,5 @@
-import IMGCover1 from '@assets/img/dummy.jpg'
-import IMGCover2 from '@assets/img/dummy.jpg'
+import IMGCover1 from '@assets/img/home/info-1.png'
+import IMGCover2 from '@assets/img/home/info-2.png'
 import IMGIsotipoSamas from '@assets/img/samas_isotipo.svg'
 import Button from '@components/Button'
 import Container from '@components/Container'

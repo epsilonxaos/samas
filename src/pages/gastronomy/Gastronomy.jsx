@@ -1,4 +1,4 @@
-import IMGBanner from '@assets/img/dummy.jpg'
+import IMGBanner from '@assets/img/restaurante/banner.jpg'
 import Banner from '@components/Banner'
 import Gallery from '@pages/gastronomy/Gallery'
 import Info from '@pages/gastronomy/Info'

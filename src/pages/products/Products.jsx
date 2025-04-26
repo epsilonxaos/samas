@@ -1,4 +1,4 @@
-import IMGBanner from '@assets/img/dummy.jpg'
+import IMGBanner from '@assets/img/productos/banner.jpg'
 import Banner from '@components/Banner'
 import Info from '@pages/products/Info'
 import ListProducts from '@pages/products/ListProducts'

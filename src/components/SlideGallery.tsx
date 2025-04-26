@@ -78,14 +78,16 @@ const SlideGallery = ({
 							<img
 								src={slide.cover}
 								alt={slide.altText ?? slide.title}
-								className={cn('h-auto max-h-[630px] w-full object-cover', classNameImg)}
+								className={cn('h-[400px] w-full object-cover md:h-[630px]', classNameImg)}
 								loading='lazy'
 							/>
 
-							<div className='pt-8'>
-								<Text.Title className={'xl:text-xl'}>{slide.title}</Text.Title>
-								<Text>{slide.description}</Text>
-							</div>
+							{slide.title && (
+								<div className='pt-8'>
+									<Text.Title className={'xl:text-xl'}>{slide.title}</Text.Title>
+									<Text>{slide.description}</Text>
+								</div>
+							)}
 						</div>
 					</SwiperSlide>
 				))}

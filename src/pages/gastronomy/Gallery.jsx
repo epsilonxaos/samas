@@ -5,17 +5,11 @@ import React from 'react'
 
 const Gallery = () => {
 	const images = [
-		{ id: 1, src: 'https://picsum.photos/650', alt: 'Dining Area' },
-		{ id: 2, src: 'https://picsum.photos/650', alt: 'Dessert Plate' },
-		{ id: 3, src: 'https://picsum.photos/650', alt: 'Coconuts' },
-		{ id: 4, src: 'https://picsum.photos/650', alt: 'Main Dish' },
-		{ id: 5, src: 'https://picsum.photos/650', alt: 'Hand Holding Dessert' },
-		// Repetimos para ver el patrón
-		{ id: 6, src: 'https://picsum.photos/650', alt: 'Dining Area 2' },
-		{ id: 7, src: 'https://picsum.photos/650', alt: 'Dessert Plate 2' },
-		{ id: 8, src: 'https://picsum.photos/650', alt: 'Coconuts 2' },
-		{ id: 9, src: 'https://picsum.photos/650', alt: 'Main Dish 2' },
-		{ id: 10, src: 'https://picsum.photos/650', alt: 'Hand Holding Dessert 2' },
+		{ id: 1, src: './img/restaurante/1.jpg', alt: 'Dining Area' },
+		{ id: 2, src: './img/restaurante/2.jpg', alt: 'Dessert Plate' },
+		{ id: 3, src: './img/restaurante/3.jpg', alt: 'Coconuts' },
+		{ id: 4, src: './img/restaurante/4.jpg', alt: 'Main Dish' },
+		{ id: 5, src: './img/restaurante/5.jpg', alt: 'Hand Holding Dessert' },
 	]
 
 	return (

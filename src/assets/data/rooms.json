@@ -1,0 +1,103 @@
+[
+	{
+		"amenities": [
+			" Cama king size",
+			"Baño completo con ducha exterior al aire libre",
+			"Aire acondicionado",
+			"Ventilador de techo",
+			"Wifi de alta velocidad",
+			" Caja fuerte",
+			"Cafetera tipo prensa francesa",
+			"Agua purificada de cortesía"
+		],
+		"gallery": [
+			{
+				"caption": "Cozy Living Room",
+				"cover": "./img/rooms/junior/1.jpg",
+				"id": 1
+			},
+			{
+				"caption": "Spacious Living Room",
+				"cover": "./img/rooms/junior/2.jpg",
+				"id": 2
+			},
+			{
+				"caption": "Spacious Living Room",
+				"cover": "./img/rooms/junior/3.jpg",
+				"id": 3
+			}
+		],
+		"icon": "./img/rooms/grafico-1.svg",
+		"id": 1,
+		"name": "Junior suite"
+	},
+	{
+		"amenities": [
+			"Cama king size",
+			"Baño completo",
+			"Ducha al aire libre",
+			"Tina de cobre exterior",
+			"Aire acondicionado",
+			"Ventilador de techo",
+			"Wifi de alta velocidad",
+			"Caja fuerte",
+			"Cafetera tipo prensa francesa",
+			"Agua purificada de cortesía"
+		],
+		"gallery": [
+			{
+				"caption": "Comfortable Bedroom",
+				"cover": "./img/rooms/ocean/1.png",
+				"id": 1
+			},
+			{
+				"caption": "Elegant Bedroom",
+				"cover": "./img/rooms/ocean/2.jpg",
+				"id": 2
+			},
+			{
+				"caption": "Elegant Bedroom",
+				"cover": "./img/rooms/ocean/3.jpg",
+				"id": 3
+			}
+		],
+		"icon": "./img/rooms/grafico-2.svg",
+		"id": 2,
+		"name": "Ocean view suite"
+	},
+	{
+		"amenities": [
+			"Cama king size",
+			"Baño completo",
+			"Ducha al aire libre",
+			"Tina de cobre exterior",
+			"Terraza privada con vista al mar",
+			"Aire acondicionado",
+			"Ventilador de techo",
+			"Wifi de alta velocidad",
+			"Caja fuerte",
+			"Cafetera tipo prensa francesa",
+			"Agua purificada de cortesía"
+		],
+		"gallery": [
+			{
+				"caption": "Modern Bathroom",
+				"cover": "./img/rooms/villas/1.jpg",
+				"id": 1
+			},
+			{
+				"caption": "Luxurious Bathroom",
+				"cover": "./img/rooms/villas/2.jpg",
+				"id": 2
+			},
+			{
+				"caption": "Luxurious Bathroom",
+				"cover": "./img/rooms/villas/3.jpg",
+				"id": 3
+			}
+		],
+		"icon": "./img/rooms/grafico-1.svg",
+		"id": 3,
+		"name": "Beach front villas"
+	}
+]

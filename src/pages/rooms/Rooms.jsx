@@ -4,6 +4,8 @@ import Info from '@pages/rooms/Info'
 import Room from '@pages/rooms/Room'
 import SpecialOffers from '@pages/rooms/SpecialOffers'
 
+import roomsData from '@assets/data/rooms.json'
+
 const Rooms = () => {
 	return (
 		<>
@@ -15,9 +17,12 @@ const Rooms = () => {
 			<Info />
 			<SpecialOffers />
 
-			<Room />
-			<Room />
-			<Room />
+			{roomsData.map((room, index) => (
+				<Room
+					key={'room_' + index}
+					data={room}
+				/>
+			))}
 
 			<div className='pb-16'></div>
 		</>

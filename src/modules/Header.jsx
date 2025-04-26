@@ -66,19 +66,39 @@ const Menu = ({ closeMenu }) => {
 				<nav className='landscape:h-full md:landscape:h-auto'>
 					<ul className='text-grisOscuro mb-16 grid grid-cols-1 gap-6 text-xl uppercase md:mb-24 md:gap-10 md:text-3xl landscape:mb-8 landscape:gap-3 md:landscape:mb-16 md:landscape:gap-6'>
 						<li>
-							<Link to='/rooms'>Habitaciones</Link>
+							<Link
+								onClick={closeMenu}
+								to='/rooms'>
+								Habitaciones
+							</Link>
 						</li>
 						<li>
-							<Link to='/experiences'>Experiencias</Link>
+							<Link
+								onClick={closeMenu}
+								to='/experiences'>
+								Experiencias
+							</Link>
 						</li>
 						<li>
-							<Link to='/gastronomy'>Gastronomía</Link>
+							<Link
+								onClick={closeMenu}
+								to='/gastronomy'>
+								Gastronomía
+							</Link>
 						</li>
 						<li>
-							<Link to='/la-saladita'>La saladita</Link>
+							<Link
+								onClick={closeMenu}
+								to='/la-saladita'>
+								La saladita
+							</Link>
 						</li>
 						<li>
-							<Link to='/products'>Productos</Link>
+							<Link
+								onClick={closeMenu}
+								to='/products'>
+								Productos
+							</Link>
 						</li>
 					</ul>
 

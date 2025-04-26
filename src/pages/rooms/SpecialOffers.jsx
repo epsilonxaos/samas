@@ -10,9 +10,9 @@ const SpecialOffers = () => {
 				className='text-center'>
 				<Text.Title>OFERTAS ESPECIALES</Text.Title>
 				<Text className='mx-auto mb-8 max-w-[470px]'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-					magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.
+					Para celebrar nuestra apertura, queremos invitarte a descubrir La Saladita con una oferta exclusiva: hasta un
+					40% de descuento en tu estadía reservando directamente con nosotros. <br />
+					Un lujo consciente, ahora más cerca que nunca.
 				</Text>
 
 				<Button>Reservar</Button>

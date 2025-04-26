@@ -7,8 +7,14 @@ const Info = () => {
 		<Container
 			doublePadding
 			className='grid grid-cols-1 gap-5 md:grid-cols-3'>
-			<Text.Title>Information</Text.Title>
-			<Text>Details about the room will be displayed here.</Text>
+			<Text.Title>Sabores que respetan la tierra</Text.Title>
+			<Text>
+				Nuestra cocina nace del entorno: ingredientes traídos de huertos locales, pesca del día y sabores que respetan
+				el ritmo de la naturaleza. <br />
+				Cada plato es una celebración del presente, preparado con técnicas sencillas y fuego abierto. <br />
+				Aquí, comer no es solo alimentarse, es un ritual lento, consciente y compartido. Una experiencia que sabe a mar,
+				a fruta madura, a hogar lejos de casa.
+			</Text>
 			<img
 				src={IMGAnimateIsotipo}
 				alt='Animated Isotipo'
