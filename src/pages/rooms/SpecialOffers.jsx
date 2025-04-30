@@ -1,3 +1,4 @@
+import BtnReservar from '@components/BtnReservar'
 import Button from '@components/Button'
 import Container from '@components/Container'
 import Text from '@components/Text'
@@ -15,7 +16,7 @@ const SpecialOffers = () => {
 					Un lujo consciente, ahora más cerca que nunca.
 				</Text>
 
-				<Button>Reservar</Button>
+				<BtnReservar />
 			</Container>
 		</div>
 	)

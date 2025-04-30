@@ -1,5 +1,4 @@
-import IMGAnimateIsotipo from '@assets/img/isotipo-animate.png'
-import Button from '@components/Button'
+import BtnReservar from '@components/BtnReservar'
 import Container from '@components/Container'
 import SlideGallery from '@components/SlideGallery'
 import Text from '@components/Text'
@@ -17,7 +16,7 @@ const Room = ({ data }) => {
 			<div className='grid grid-cols-1 gap-4 pt-16 md:grid-cols-3 md:gap-10'>
 				<div className='col-span-1'>
 					<Text.Title className={'text-center md:text-left'}>{data.name}</Text.Title>
-					<Button className={'hidden bg-white md:block'}>Reservar</Button>
+					<BtnReservar className={'hidden bg-white md:block'} />
 				</div>
 				<div className='relative col-span-1 md:col-span-2 md:pr-[150px]'>
 					<ul className='mb-14 grid list-disc grid-cols-2 justify-between pl-4 md:mb-0'>
@@ -26,7 +25,7 @@ const Room = ({ data }) => {
 						))}
 					</ul>
 
-					<Button className={'mx-auto mb-10 block bg-white md:hidden'}>Reservar</Button>
+					<BtnReservar className={'mx-auto mb-10 block bg-white md:hidden'} />
 
 					<img
 						src={data.icon}

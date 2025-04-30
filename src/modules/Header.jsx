@@ -1,5 +1,6 @@
 import SVGLogotipo from '@assets/img/logotipo.svg'
 import SVGMenu from '@assets/img/menu.svg'
+import BtnReservar from '@components/BtnReservar'
 import Button from '@components/Button'
 import Container from '@components/Container'
 import { useClickAway } from '@uidotdev/usehooks'
@@ -108,7 +109,5 @@ const Menu = ({ closeMenu }) => {
 		</motion.div>
 	)
 }
-
-const BtnReservar = ({ className }) => <Button className={className}>RESERVAR</Button>
 
 export default Header

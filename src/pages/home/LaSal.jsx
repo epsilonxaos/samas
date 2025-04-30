@@ -1,6 +1,7 @@
 import IMGCover1 from '@assets/img/home/info-1.png'
 import IMGCover2 from '@assets/img/home/info-2.png'
 import IMGIsotipoSamas from '@assets/img/samas_isotipo.svg'
+import BtnReservar from '@components/BtnReservar'
 import Button from '@components/Button'
 import Container from '@components/Container'
 import Text from '@components/Text'
@@ -59,7 +60,7 @@ const InfoComponent = ({ className }) => {
 					las habitaciones de LaSal Samas son un refugio sereno, donde el lujo se siente, pero no se impone.
 				</Text>
 
-				<Button>Reservar</Button>
+				<BtnReservar />
 			</div>
 		</article>
 	)
