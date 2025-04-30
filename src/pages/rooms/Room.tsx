@@ -17,7 +17,7 @@ const Room = ({ data }) => {
 			<div className='grid grid-cols-1 gap-4 pt-16 md:grid-cols-3 md:gap-10'>
 				<div className='col-span-1'>
 					<Text.Title className={'text-center md:text-left'}>{data.name}</Text.Title>
-					<BtnReservar className={'hidden bg-white md:inline-block'} />
+					<BtnReservar className={'hidden bg-black text-white hover:bg-white hover:text-black md:inline-block'} />
 				</div>
 				<div className='relative col-span-1 md:col-span-2 md:pr-[150px]'>
 					<ul className='mb-14 list-disc pl-4 md:mb-0 lg:columns-2'>

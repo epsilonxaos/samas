@@ -27,5 +27,5 @@ a {
 
 .swiper-button-prev,
 .swiper-button-next {
-	@apply !top-0;
+	@apply !hidden;
 }

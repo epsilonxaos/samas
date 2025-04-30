@@ -94,7 +94,7 @@ const SlideGallery = ({
 							{slide.title && (
 								<div className='pt-8'>
 									<Text.Title className={'xl:text-xl'}>{slide.title}</Text.Title>
-									<Text>{slide.description}</Text>
+									<Text parseHtml>{slide.description}</Text>
 								</div>
 							)}
 						</div>
