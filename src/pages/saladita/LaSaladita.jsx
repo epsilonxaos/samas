@@ -19,8 +19,8 @@ const LaSaladita = () => {
 			<Info />
 			<Gallery />
 			<LaSaladitaComponent>
-				Ubicada en la costa del Pacífico mexicano, La Saladita es un rincón donde el tiempo se desliza al ritmo de las
-				olas.
+				LaSal Samas, donde el lujo está en lo esencial. <br />
+				Un destino para quienes buscan mar, surf y silencio, sin renunciar a la belleza ni a la autenticidad
 			</LaSaladitaComponent>
 			<div className='pt-16'></div>
 			<VideoModal

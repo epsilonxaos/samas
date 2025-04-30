@@ -1,5 +1,5 @@
 import IMGCover1 from '@assets/img/home/info-1.png'
-import IMGCover2 from '@assets/img/home/info-2.png'
+import IMGCover2 from '@assets/img/home/info-2.jpg'
 import IMGIsotipoSamas from '@assets/img/samas_isotipo.svg'
 import BtnReservar from '@components/BtnReservar'
 import Button from '@components/Button'
@@ -15,7 +15,7 @@ const LaSal = () => {
 				<img
 					src={IMGCover1}
 					alt='Portada 1'
-					className='h-[400px] w-full object-cover md:h-[650px]'
+					className='h-[400px] w-full object-cover object-left-top md:h-[650px]'
 				/>
 
 				<InfoComponent className='hidden md:flex' />

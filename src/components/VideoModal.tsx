@@ -23,13 +23,13 @@ export const VideoModal = ({ videoSrc, cover, className }: VideoModalProps) => {
 
 	return (
 		<section className='relative w-full'>
-			<div className='hover:bg-oscuro/40 bg-oscuro/10 absolute inset-0 z-10 flex items-center justify-center transition-all'>
+			{/* <div className='hover:bg-oscuro/40 bg-oscuro/10 absolute inset-0 z-10 flex items-center justify-center transition-all'>
 				<button
 					onClick={() => setIsOpen(true)}
 					className='cursor-pointer text-white'>
 					<GoPlay size={64} />
 				</button>
-			</div>
+			</div> */}
 
 			<img
 				src={cover}

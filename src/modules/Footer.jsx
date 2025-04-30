@@ -10,7 +10,7 @@ const Footer = () => {
 		<footer className='bg-verdeAqua text-white'>
 			<Container>
 				<div className='flex flex-col items-center justify-around md:flex-row'>
-					<Text.Title>Join our Newsletter</Text.Title>
+					{/* <Text.Title>Join our Newsletter</Text.Title> */}
 					<img
 						src={IMGManuscrito}
 						alt='Manuscrito'
@@ -24,7 +24,7 @@ const Footer = () => {
 					<li className='mb-6 md:mb-0'>
 						<Text className={'mb-8 uppercase'}>Contacto</Text>
 						<Text className={'mb-0 text-xs'}>
-							<a href='tel:+0000000000'>+000 000 0000</a>
+							<a href='tel:+529992923085'>+52 999 292 3085</a>
 						</Text>
 						<Text className={'mb-0 text-xs'}>
 							<a href='mailto:reservaciones@lasal.mx'>reservaciones@lasal.mx</a>
@@ -52,7 +52,7 @@ const Footer = () => {
 					</li>
 					<li>
 						<Text className={'mb-8 uppercase'}>Direccion</Text>
-						<Text className={'mb-0 text-xs'}>Calle Ejemplo 123</Text>
+						<Text className={'mb-0 text-xs'}>Estero colorado, C. Cabeza de Vaca sn, 40802 La Saladita, Gro.</Text>
 					</li>
 				</ul>
 
@@ -63,7 +63,7 @@ const Footer = () => {
 				/>
 			</Container>
 
-			<div className='bg-oscuro w-full py-2 text-center text-xs text-white'>Desarrollado por madeby partners</div>
+			<div className='bg-oscuro w-full py-2 text-center text-xs text-white'>Desarrollado x Made by Partners</div>
 		</footer>
 	)
 }

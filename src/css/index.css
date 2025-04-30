@@ -20,6 +20,11 @@ html {
 	@apply text-oscuro bg-white text-base;
 }
 
+button,
+a {
+	@apply cursor-pointer;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
 	@apply !top-0;

@@ -22,6 +22,7 @@ type TSlideGalleryProps = {
 	classNameSlide?: string
 	classNameImg?: string
 	className?: string
+	loop?: boolean
 }
 
 const SlideGallery = ({
@@ -30,6 +31,7 @@ const SlideGallery = ({
 	classNameImg,
 	className,
 	viewRoomGalleryActive,
+	loop = true,
 }: TSlideGalleryProps) => {
 	const swiperRef = useRef()
 
@@ -55,7 +57,7 @@ const SlideGallery = ({
 					enabled: false,
 				}}
 				speed={1000}
-				loop
+				loop={loop}
 				autoplay={{
 					delay: 5000,
 					disableOnInteraction: false,

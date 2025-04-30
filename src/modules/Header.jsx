@@ -94,13 +94,13 @@ const Menu = ({ closeMenu }) => {
 								La saladita
 							</Link>
 						</li>
-						<li>
+						{/* <li>
 							<Link
 								onClick={closeMenu}
 								to='/products'>
 								Productos
 							</Link>
-						</li>
+						</li> */}
 					</ul>
 
 					<BtnReservar />
