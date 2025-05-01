@@ -1,4 +1,4 @@
-![Static Badge](https://img.shields.io/badge/Version-1.0.0-purple)
+![Static Badge](https://img.shields.io/badge/Version-2.0.0-purple)
 
 # React + Vite
 
