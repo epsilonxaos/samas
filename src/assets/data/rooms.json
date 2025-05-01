@@ -13,17 +13,17 @@
 		"gallery": [
 			{
 				"caption": "Cozy Living Room",
-				"cover": "./img/rooms/junior/1.png",
+				"cover": "./img/rooms/junior/1.png?v=1",
 				"id": 1
 			},
 			{
 				"caption": "Spacious Living Room",
-				"cover": "./img/rooms/junior/2.jpg",
+				"cover": "./img/rooms/junior/2.jpg?v=1",
 				"id": 2
 			},
 			{
 				"caption": "Spacious Living Room",
-				"cover": "./img/rooms/junior/3.png",
+				"cover": "./img/rooms/junior/3.png?v=1",
 				"id": 3
 			}
 		],
@@ -47,17 +47,17 @@
 		"gallery": [
 			{
 				"caption": "Comfortable Bedroom",
-				"cover": "./img/rooms/ocean/1.png",
+				"cover": "./img/rooms/ocean/1.png?v=1",
 				"id": 1
 			},
 			{
 				"caption": "Elegant Bedroom",
-				"cover": "./img/rooms/ocean/2.png",
+				"cover": "./img/rooms/ocean/2.png?v=1",
 				"id": 2
 			},
 			{
 				"caption": "Elegant Bedroom",
-				"cover": "./img/rooms/ocean/3.jpg",
+				"cover": "./img/rooms/ocean/3.jpg?v=1",
 				"id": 3
 			}
 		],
@@ -82,17 +82,17 @@
 		"gallery": [
 			{
 				"caption": "Modern Bathroom",
-				"cover": "./img/rooms/villas/1.jpg",
+				"cover": "./img/rooms/villas/1.jpg?v=1",
 				"id": 1
 			},
 			{
 				"caption": "Luxurious Bathroom",
-				"cover": "./img/rooms/villas/2.jpg",
+				"cover": "./img/rooms/villas/2.jpg?v=1",
 				"id": 2
 			},
 			{
 				"caption": "Luxurious Bathroom",
-				"cover": "./img/rooms/villas/3.png",
+				"cover": "./img/rooms/villas/3.png?v=1",
 				"id": 3
 			}
 		],
