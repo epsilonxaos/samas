@@ -11,7 +11,9 @@ const Gastronomy = () => {
 				cover={IMGBanner}
 				includeRestHeader={true}>
 				<div className='absolute bottom-12 left-0 w-full'>
-					<Button.Url className='mx-auto block w-[140px] text-center'>MENÚ</Button.Url>
+					<Button.Url className='mx-auto block w-[140px] bg-white text-center text-black hover:bg-black hover:text-white'>
+						MENÚ
+					</Button.Url>
 				</div>
 			</Banner>
 

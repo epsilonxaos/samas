@@ -6,8 +6,10 @@ const Info = () => {
 	return (
 		<Container
 			doublePadding
-			className='grid grid-cols-1 gap-5 md:grid-cols-3'>
-			<Text.Title>Sabores que respetan la tierra</Text.Title>
+			className='grid max-w-[1520px] grid-cols-1 gap-5 md:grid-cols-3'>
+			<div className='col-span-1'>
+				<Text.Title className='max-w-[400px]'>Sabores que respetan la tierra</Text.Title>
+			</div>
 			<Text>
 				Nuestra cocina nace del entorno: ingredientes traídos de huertos locales, pesca del día y sabores que respetan
 				el ritmo de la naturaleza. <br />

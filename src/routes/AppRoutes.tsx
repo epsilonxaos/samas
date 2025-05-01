@@ -11,7 +11,7 @@ const AppRoutes = () => {
 	const location = useLocation()
 
 	return (
-		<main>
+		<main className='text-center md:text-left'>
 			<Routes
 				location={location}
 				key={location.pathname}>

@@ -27,5 +27,5 @@ a {
 
 .swiper-button-prev,
 .swiper-button-next {
-	@apply !hidden;
+	@apply scale-50 !text-white;
 }

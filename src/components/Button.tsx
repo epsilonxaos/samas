@@ -9,7 +9,7 @@ const Button = ({ children, onClick, type, className }: TButtonParams) => {
 		<button
 			type={type ?? 'button'}
 			className={cn(
-				'bg-gris hover:text-gris min-w-[140px] cursor-pointer border px-5 py-2 text-xs text-black uppercase transition-all hover:bg-black',
+				'hover:bg-gris min-w-[140px] cursor-pointer border bg-black px-5 py-2 text-xs text-white uppercase transition-all hover:text-black',
 				className
 			)}
 			onClick={onClick}>
@@ -25,7 +25,7 @@ const Url = ({ children, href, className }: TButtonParams & { href: string }) =>
 			target='_blank'
 			rel='noopener noreferrer'
 			className={cn(
-				'bg-gris hover:text-gris min-w-[140px] cursor-pointer border px-5 py-2 text-xs text-black uppercase transition-all hover:bg-black',
+				'hover:bg-gris min-w-[140px] cursor-pointer border bg-black px-5 py-2 text-xs text-white uppercase transition-all hover:text-black',
 				className
 			)}>
 			{children}
@@ -38,7 +38,7 @@ const Navigation = ({ to, children, onClick, className }: TButtonParams & { to: 
 		<Link
 			to={to}
 			className={cn(
-				'bg-gris hover:text-gris min-w-[140px] cursor-pointer border px-5 py-2 text-xs text-black uppercase transition-all hover:bg-black',
+				'hover:bg-gris min-w-[140px] cursor-pointer border bg-black px-5 py-2 text-xs text-white uppercase transition-all hover:text-black',
 				className
 			)}
 			onClick={onClick}>

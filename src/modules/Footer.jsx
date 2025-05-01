@@ -31,7 +31,7 @@ const Footer = () => {
 						</Text>
 						<Text className={'mb-0 text-xs'}>
 							<a
-								href='http://www.lasal.mx'
+								href='https://www.instagram.com/lasalxsamas/'
 								target='_blank'
 								rel='noopener noreferrer'>
 								@Lasal
@@ -48,10 +48,10 @@ const Footer = () => {
 						<Text className={'mb-8 uppercase'}>Nosotros</Text>
 
 						<Text className={'mb-0 text-xs'}>Explore</Text>
-						<Text className={'mb-0 text-xs'}>The Lost World</Text>
+						{/* <Text className={'mb-0 text-xs'}>The Lost World</Text> */}
 					</li>
 					<li>
-						<Text className={'mb-8 uppercase'}>Direccion</Text>
+						<Text className={'mb-8 uppercase'}>Dirección</Text>
 						<Text className={'mb-0 text-xs'}>Estero colorado, C. Cabeza de Vaca sn, 40802 La Saladita, Gro.</Text>
 					</li>
 				</ul>

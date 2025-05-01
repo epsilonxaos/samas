@@ -37,7 +37,7 @@ const SlideGallery = ({
 
 	return (
 		<div className='relative'>
-			<nav className='absolute top-1/2 z-50 flex w-full -translate-y-1/2 items-center justify-between gap-2 px-4 transition-all'>
+			{/* <nav className='absolute top-1/2 z-50 flex w-full -translate-y-1/2 items-center justify-between gap-2 px-4 transition-all'>
 				<button
 					className='border-oscuro h-[40px] cursor-pointer rounded-xs border bg-white/50 opacity-70 hover:opacity-100'
 					onClick={() => swiperRef.current?.slidePrev()}>
@@ -48,14 +48,12 @@ const SlideGallery = ({
 					onClick={() => swiperRef.current?.slideNext()}>
 					<MdKeyboardArrowRight size={24} />
 				</button>
-			</nav>
+			</nav> */}
 
 			<Swiper
 				modules={[Navigation, Autoplay]} // Add the Lazy module here
 				// lazy={true}
-				navigation={{
-					enabled: false,
-				}}
+				navigation
 				speed={1000}
 				loop={loop}
 				autoplay={{

@@ -28,7 +28,7 @@ const Header = () => {
 
 				<Link
 					to='/'
-					className='md:absolute md:left-1/2 md:-translate-x-1/2'>
+					className='absolute left-1/2 -translate-x-1/2'>
 					<img
 						src={SVGLogotipo}
 						alt='Logotipo'

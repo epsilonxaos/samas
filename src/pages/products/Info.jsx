@@ -6,7 +6,7 @@ const Info = () => {
 	return (
 		<Container
 			doublePadding
-			className='grid grid-cols-1 gap-5 md:grid-cols-3'>
+			className='grid max-w-[1520px] grid-cols-1 gap-5 md:grid-cols-3'>
 			<Text.Title>Information</Text.Title>
 			<Text>Details about the room will be displayed here.</Text>
 			<img

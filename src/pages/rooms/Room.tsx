@@ -7,7 +7,7 @@ const Room = ({ data }) => {
 	if (!data) return null
 
 	return (
-		<Container className='md:!pr-0'>
+		<Container className='md:!pr-0 lg:pl-[100px]'>
 			<SlideGallery
 				viewRoomGalleryActive
 				gallery={data.gallery}
@@ -20,7 +20,7 @@ const Room = ({ data }) => {
 					<BtnReservar className={'hidden bg-black text-white hover:bg-white hover:text-black md:inline-block'} />
 				</div>
 				<div className='relative col-span-1 md:col-span-2 md:pr-[150px]'>
-					<ul className='mb-14 list-disc pl-4 md:mb-0 lg:columns-2'>
+					<ul className='mb-14 list-disc pl-4 text-left md:mb-0 lg:columns-2'>
 						{data.amenities.map((amenity, index) => (
 							<li key={'amenity_' + index}>{amenity}</li>
 						))}
@@ -31,7 +31,7 @@ const Room = ({ data }) => {
 					<img
 						src={data.icon}
 						alt='Animated Isotipo'
-						className='mx-auto mb-5 size-[35px] -translate-y-1/2 object-contain md:absolute md:top-1/2 md:right-2 md:mr-0 md:size-[50px]'
+						className='mx-auto mb-5 size-[35px] -translate-y-1/2 object-contain md:absolute md:top-1/2 md:right-4 md:mr-0 md:size-[50px] lg:right-10 xl:right-20'
 					/>
 				</div>
 			</div>

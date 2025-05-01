@@ -6,14 +6,11 @@ const Info = () => {
 	return (
 		<Container
 			doublePadding
-			className='grid grid-cols-1 gap-5 md:grid-cols-3'>
+			className='grid max-w-[1520px] grid-cols-1 gap-5 md:grid-cols-3'>
 			<Text.Title>experiencias</Text.Title>
 			<Text>
-				En LaSal Samas - Hotel La Saladita, las experiencias no se programan, se descubren. <br />
-				Desde clases de surf al amanecer hasta caminatas entre huertas, cada momento está tejido por el entorno y la
-				comunidad. <br />
-				Nuestro blog es un espacio vivo donde compartimos historias del mar, rituales de bienestar, recomendaciones
-				locales y maneras de conectar con este rincón del mundo de forma más presente, más simple, más libre.
+				En LaSal Samas - Hotel La Saladita, las experiencias nacen del entorno. Surf al amanecer, caminatas entre
+				huertas y rituales de bienestar te conectan con la esencia de este lugar: natural, libre y presente.
 			</Text>
 			<img
 				src={IMGAnimateIsotipo}

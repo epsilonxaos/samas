@@ -4,6 +4,7 @@ import IMGBannerVideo from '@assets/img/home/banner-video2.jpg'
 import SVGIsotipo from '@assets/img/isotipo_white.svg'
 import VideoSeccion from '@assets/videos/dummy.mp4'
 import Banner from '@components/Banner'
+import BtnReservar from '@components/BtnReservar'
 import LaSaladitaComponent from '@components/LaSaladitaComponent'
 import Mapa from '@components/Mapa'
 import Text from '@components/Text'
@@ -18,8 +19,10 @@ const Index = () => {
 			<Banner
 				cover={IMGBanner}
 				includeRestHeader={true}>
+				<BtnReservar className='absolute bottom-[100px] left-1/2 -translate-x-1/2 bg-white text-black md:hidden' />
+
 				<img
-					className='absolute bottom-[150px] left-1/2 size-11 -translate-x-1/2'
+					className='absolute bottom-[150px] left-1/2 hidden size-11 -translate-x-1/2 md:block'
 					loading='lazy'
 					src={SVGIsotipo}
 					alt='Isotipo'
